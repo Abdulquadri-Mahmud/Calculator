@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Oswald&family=Raleway:ital,wght@0,300;0,400;1,300&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif 'Oswald','Raleway', sans-serif;
+  font-weight:400px;
+}
+body{
+  background:black;
+}
+.container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4vh;
+}
+.cal_cont{
+  height: 540px;
+  width:95%;
+  border-radius:12px;
+  border:5px solid rgba(20, 190, 33, 1);
+  animation:box-anime 2.3s linear alternate infinite;
+}
+.themes_cont{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-right:12px;
+}
+
+.themes{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:30px;
+  width:210px;
+  background-color: black;
+  border:5px solid rgba(20, 190, 33, 1);
+  border-radius:7px;
+  margin:7px;
+}
+.theme_text {
+  color: rgba(20, 190, 33, 1);
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+button.theme{
+  outline:none;
+  border:none;
+  text-align: center;
+  color:#000;
+  height:16px;
+  width:16px;
+  border-radius:50%;
+  margin:4px;
+  font-size:15px;
+  font-weight:bolder;
+}
+.themes > button#theme_1{
+  background-color: rgba(20, 190, 33, 1);
+  /* /border:2px solid rgba(20, 190, 33, 1);/ */
+}
+.themes > button#theme_2{
+  background-color: #fff;
+  /* border:2px solid #fff; */
+}
+.themes > button#theme_3{
+  background-color: gold;
+  /* /border:2px solid gold;/ */
+}
+.display_cont{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0vh;
+}
+.display{
+  height: 50px;
+  width:90%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border:5px solid rgba(20, 190, 33, 1);
+  border-radius:10px;
+  color:rgba(75, 207, 86, 1);
+  font-size: 21px;
+  font-weight: bolder;
+  /* overflow-x: scroll ; */
+}
+.buttons{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2vh;
+}
+.buttons > .button{
+  height:55px;
+  width:30%;
+  border:5px solid rgba(20, 190, 33, 1);
+  border-radius:10px;
+  background-color: #000;
+  color:rgba(75, 207, 86, 1);
+  margin: 2px;
+  font-size:21px;
+  font-weight: bolder;
+  outline: none;
+}
+.buttons > .button:hover{
+ background-color:rgba(199, 207, 194, 1);
+}
+.buttons > .button > #zero, #equal{
+  flex-grow:.83;
+}
